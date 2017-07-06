@@ -1,6 +1,8 @@
 # MMM-calendarExtDays
 extended default calendar view
 
+![screenshot](https://github.com/eouia/MMM-calendarExtDays/blob/master/Magic_Mirror_row_7_overflow.jpg?raw=true)
+
 ## Information
 
 **[Important] This is under construction, not stable. All responsibilty caused by this version is not mine, sorry. But if you want to try, please go ahead.**
