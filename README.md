@@ -5,7 +5,7 @@ extended default calendar view
 
 ## Information
 
-**[Important] This is under construction, not stable. All responsibilty caused by this version is not mine, sorry. But if you want to try, please go ahead.**
+**[Important] This is under construction, not stable. All responsibilty caused by this version is... just sorry. But if you want to try, please go ahead.**
 
 This module is beautifying original `default/calendar` module view. This module catches events broadcasted from original calendar, shows them pretty. That's simple. I didn't reinvent the wheels.
 
@@ -15,30 +15,30 @@ Nothing. I hope someday I can build more complex and greeeeeaaaat modules which 
 ## Installation
 
 1. Clone this repo into `~/MagicMirror/modules` directory.
-```
-  	$ git clone https://github.com/eouia/MMM-calendarExtDays.git
+```Shell
+  $ git clone https://github.com/eouia/MMM-calendarExtDays.git
 ```
 2. Configure your `~/MagicMirror/config/config.js`:
 
-```
-    {
-        module: 'MMM-calendarExtDays',
-        position: 'bottom_bar',
-        config: {
+```JavaScript
+  {
+    module: 'MMM-calendarExtDays',
+    position: 'bottom_bar',
+      config: {
             ...
-        }
-    }
+      }
+  }
 ```
 3. This version needs some original calendar module(~ 2.1.2) hacks.
 Backup and modify `calendar.js`.
-```
-  	$ cd ~/MagicMirror/modules/default/calendar
-  	$ cp calendar.js calendar.js.original
-  	$ nano calendar.js
+```Shell
+  $ cd ~/MagicMirror/modules/default/calendar
+  $ cp calendar.js calendar.js.original
+  $ nano calendar.js
 ```
 go to around 524 line and find these.
 
-```
+```Javascript
   for (var e in calendar) {
 	var event = cloneObject(calendar[e]);
     
@@ -48,13 +48,13 @@ go to around 524 line and find these.
       
 	delete event.url;
 	eventList.push(event);
-  }
+ }
 
 ```
 **This instruction will be deprecated after `PULL REQUEST` is accpeted and merged in Master branch.**
 
 4. Configure your `~/MagicMirror/config/config.js` again. In this time you could inspect `calendar` settings:
-```
+```Javascript
 	{
 		module: "calendar",
 		position: "top_left",
@@ -82,7 +82,7 @@ Enough Entries are needed for showing proper events by days.
 | **Option** | **Value Type** | **Default** | **Description** |
 | --- | --- | --- | --- |
 | `locale`    | `String`  |`'en'`  | Format date strings with specific language. (e.g. `'ko'` displays '일요일' instead of 'Sunday') |
-| `timezone`  | `String`  | `null` | When you want display time of specific timezone. (e.g. `'America/Los_Angeles'` for Western US). Default value  is your current system locale(I wish). I think there might be some bug about this. I'll fix it later. |
+| `timezone`  | `String`  | `null` | When you want to display time of specific timezone. (e.g. `'America/Los_Angeles'` for Western US). Default value  is your current system locale(I wish). I think there might be some bug about this. I'll fix it later. |
 | `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen when this value is smaller than 0 or not Integer. I'll check this later also. <br> Over `7` in horizontal region and over `5` in vertical region might be not what you wish to see. |
 | `direction` | `String`  | `'row'`   | **Available Values** : `'row'`,`'row-reverse'`, `'column'`, `'column-reverse'`<br> `'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`) <br>`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) <br> But... This is your choice. |
 | `overflowRolling`	| `Boolean`	| `true`	| If your events are too many to show, you can use this option for auto-rolling events which are overflowed over `overflowHeight` |
