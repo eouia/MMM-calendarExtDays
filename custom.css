@@ -1,0 +1,186 @@
+.MMM-calendarExtDays .fa-stack-1x {
+    color:#000;
+}
+
+.MMM-calendarExtDays .fulldayevent .fa-stack-1x {
+    color:#FFF;
+}
+
+.MMM-calendarExtDays .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+
+.MMM-calendarExtDays .daily {
+    margin-left:5px;
+    margin-right:5px;
+    flex-grow: 1;
+    flex-basis: 100px;
+    box-sizing:border-box;
+    margin-bottom:5px;
+}
+
+.MMM-calendarExtDays .daily .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: baseline;
+    align-content: flex-end;
+    border-bottom: 2px solid #CCC;
+    padding:2px;
+    margin-bottom:0;
+    border-radius:15px 15px 0 0;
+}
+
+.MMM-calendarExtDays .daily .header > * {
+    opacity:1.0;
+}
+.MMM-calendarExtDays .daily .header .dateSuite,
+.MMM-calendarExtDays .daily .header .day {
+    flex-grow: 1;
+    flex-basis: auto;
+    line-height:100%;
+    opacity:1;
+}
+
+.MMM-calendarExtDays .header .date {
+    font-weight:bold;
+    text-align:left;
+    color:#FFF;
+    padding-left:10px;
+}
+.MMM-calendarExtDays .month {
+    color:#999;
+    display:none;
+    font-size:80%;
+}
+
+.MMM-calendarExtDays .nextmonth {
+    display:inline;
+}
+
+
+.MMM-calendarExtDays .header .date .month::after {
+    content: " "
+}
+
+.MMM-calendarExtDays .header .dateSuite {
+    font-weight:bold;
+    text-align:left;
+}
+
+.MMM-calendarExtDays .header .day {
+    font-weight:bold;
+    text-align:right;
+    font-size:50%;
+    padding-right:10px;
+}
+
+.MMM-calendarExtDays .wrapper .daily:first-child .header {
+    background:rgba(255,255,255,0.9)
+}
+.MMM-calendarExtDays .wrapper .daily:first-child .header .date {
+    color:#000;
+}
+
+.MMM-calendarExtDays .weekday_6 .header {
+    background:rgba(51,51,153,0.5);
+}
+
+.MMM-calendarExtDays .weekday_7 .header {
+    background:rgba(153,51,51,0.5);
+}
+
+.MMM-calendarExtDays .weekday_6 .day {
+    color:#99F;
+}
+
+.MMM-calendarExtDays .weekday_7 .day {
+    color:#F99;
+}
+
+
+
+.MMM-calendarExtDays .events {
+    list-style:none;
+    padding:0;
+    margin:0;
+
+}
+
+.MMM-calendarExtDays .events {
+    color:#FFF;
+}
+
+.MMM-calendarExtDays .fulldayevent {
+    color:#000;
+}
+
+
+.MMM-calendarExtDays .overflowed {
+    overflow:hidden;
+}
+
+.MMM-calendarExtDays .overflowed .events {
+    position:relative;
+    animation:scroll linear infinite;
+}
+
+@keyframes scroll{
+    from {
+        transform: translate3d(0,0,0);
+    }
+    to {
+        transform: translate3d(0,-100%,0);
+    }
+}
+
+
+.MMM-calendarExtDays .events .event {
+    text-align:left;
+    font-size:50%;
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    line-height:100%;
+    border-radius: 10px 10px 10px 10px;
+    margin-top : 3px;
+    background:rgba(51,51,51,0.5);
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.MMM-calendarExtDays .event .symbol {
+    order:1;
+    display:block;
+    flex-basis:13%;
+    text-align:left;
+    font-size:80%;
+}
+.MMM-calendarExtDays .event .eventContainer {
+    text-align:left;
+    order:2;
+    flex-basis:80%;
+    padding-left:5px;
+}
+
+.MMM-calendarExtDays .events .event .eventTime {
+    padding-top:5px;
+}
+
+.MMM-calendarExtDays .events .event .eventTime {
+    text-align:right;
+    font-size:80%;
+    font-weight:normal;
+}
+
+.MMM-calendarExtDays .events .event .eventLocation {
+    text-align:right;
+    font-size:80%;
+    font-weight:normal;
+}
