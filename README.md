@@ -13,9 +13,9 @@ Nothing. I hope someday I can build more complex and greeeeeaaaat modules which 
 ## Installation
 
 1. Clone this repo into `~/MagicMirror/modules` directory.
-```
-  $ git clone https://github.com/eouia/MMM-calendarExtDays.git
-```
+  ```
+  	$ git clone https://github.com/eouia/MMM-calendarExtDays.git
+  ```
 1. Configure your `~/MagicMirror/config/config.js`:
 
     ```
@@ -29,11 +29,11 @@ Nothing. I hope someday I can build more complex and greeeeeaaaat modules which 
     ```
 1. This version needs some original calendar module hacks.
 Backup and modify `calendar.js`.
-```
+    ```
   $ cd ~/MagicMirror/modules/default/calendar
   $ cp calendar.js calendar.js.original
   $ nano calendar.js
-```
+    ```
 go to around 524 line and find these.
 ```
 			for (var e in calendar) {
