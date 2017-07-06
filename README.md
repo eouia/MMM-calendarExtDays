@@ -74,7 +74,8 @@ go to around 524 line and find these.
 ```
 If symbol and color are not used, this module shows only circle symbol and BLACK-WHITE. and that is not what you want. 
 Enough Entries are needed for showing proper events by days.
-** This is not Alternative of default calendar module. This module needs default calendar module running. Don't remove the default calendar from your configs. **
+
+**This is not Alternative of default calendar module. This module needs default calendar module running. Don't remove the default calendar from your configs.**
 
 ## Config Options
 
