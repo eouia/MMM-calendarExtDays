@@ -79,23 +79,16 @@ Enough Entries are needed for showing proper events by days.
 | --- | --- | --- | --- |
 | `locale`    | `String`  |`'en'`  | Format date strings with specific language. (e.g. `'ko'` for display 'Sunday' to '일요일') |
 | `timezone`  | `String`  | `null` | When you want display time of specific timezone. (e.g. `'America/Los_Angeles'` for Western US). Default value  is your current system locale(I wish). I think there might be some bug about this. I'll fix it later. |
-| `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen this value is smaller than 0 or not Integer. I'll check this later also. <br>
-Over `7` in horizontal region and over `5` in vertical region might be not what you wish to see. |
-| `direction` | `String`  | `'row'`   | **Available Values** : `'row'`,`'row-reverse'`, `'column'`, `'column-reverse'`
-`'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`) <br>
-`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) <br>
-But... This is your choice. |
+| `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen this value is smaller than 0 or not Integer. I'll check this later also. <br> Over `7` in horizontal region and over `5` in vertical region might be not what you wish to see. |
+| `direction` | `String`  | `'row'`   | **Available Values** : `'row'`,`'row-reverse'`, `'column'`, `'column-reverse'`<br> `'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`) <br>`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) <br> But... This is your choice. |
 | `overflowRolling`	| `Boolean`	| `true`	| If your events are too many to show, you can use this option for auto-rolling events which are overflowed over `overflowHeight` |
 | `overflowHeight`	| `Integer`	| `100`	| Do not append `px` or `%`. Only Integer is acceptable.<br>
 I know, `100` is a bit small. If you have large screen, `250` could be pretty. This value is not activated when `overflowRolling` is not `true`. |
 | `overflowDuration`	| `Integer`(sec)	| `2`	| Smaller is faster. This is also not activated when `overflowRolling` is not `true`. |
 | `fullDayEventLocalize`	| `Boolean`	| `true`	| Don't touch this. This is a great mystery even for me. Someday I'll fix it. |
 | `hideOriginal`	| `Boolean`	| `true`	| Sorry @MichMich. This could be `hide` the original calendar. It is not `module.hide()`, just `display:none`.|
-| `originalSender`	| `String`	| `'calendar'`	| Don't touch this. Reserved for future. <br>
-Currently only `calendar` module broadcast calendar events. But I imagine someday there will be other modules who broadcast events. Weather module could tell forecasting. Uber module could tell the reservation. Furthermore, Alexa or Google Assistant could also. What a dream! |
-| `monthStringFormat`	| `String`	| `'MMM'`	| If the date of events are in next month, month name will be added front of date. <br>
-You can see all the variable format tokens in `moment.js :: .format()` [link](https://momentjs.com/docs/#/displaying/format/)  <br>
-`.fromNow()` is not supported. Someday I will. |
+| `originalSender`	| `String`	| `'calendar'`	| Don't touch this. Reserved for future. <br> Currently only `calendar` module broadcast calendar events. But I imagine someday there will be other modules who broadcast events. Weather module could tell forecasting. Uber module could tell the reservation. Furthermore, Alexa or Google Assistant could also. What a dream! |
+| `monthStringFormat`	| `String`	| `'MMM'`	| If the date of events are in next month, month name will be added front of date. <br> You can see all the variable format tokens in `moment.js :: .format()` [link](https://momentjs.com/docs/#/displaying/format/)  <br> `.fromNow()` is not supported. Someday I will. |
 | `dateStringFormat`	| `String`	| `'D'`	| Main date format(the biggest number in the module). |
 | `dayStringFormat`	| `String`	| `'ddd'` | Name of week day. |
 | `eventTimeFormat`	| `String`	| `'HH:mm'` | How to display time of event. |
