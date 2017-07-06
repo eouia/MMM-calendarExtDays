@@ -82,8 +82,7 @@ Enough Entries are needed for showing proper events by days.
 | `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen this value is smaller than 0 or not Integer. I'll check this later also. <br> Over `7` in horizontal region and over `5` in vertical region might be not what you wish to see. |
 | `direction` | `String`  | `'row'`   | **Available Values** : `'row'`,`'row-reverse'`, `'column'`, `'column-reverse'`<br> `'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`) <br>`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) <br> But... This is your choice. |
 | `overflowRolling`	| `Boolean`	| `true`	| If your events are too many to show, you can use this option for auto-rolling events which are overflowed over `overflowHeight` |
-| `overflowHeight`	| `Integer`	| `100`	| Do not append `px` or `%`. Only Integer is acceptable.<br>
-I know, `100` is a bit small. If you have large screen, `250` could be pretty. This value is not activated when `overflowRolling` is not `true`. |
+| `overflowHeight`	| `Integer`	| `100`	| Do not append `px` or `%`. Only Integer is acceptable.<br> I know, `100` is a bit small. If you have large screen, `250` could be pretty. This value is not activated when `overflowRolling` is not `true`. |
 | `overflowDuration`	| `Integer`(sec)	| `2`	| Smaller is faster. This is also not activated when `overflowRolling` is not `true`. |
 | `fullDayEventLocalize`	| `Boolean`	| `true`	| Don't touch this. This is a great mystery even for me. Someday I'll fix it. |
 | `hideOriginal`	| `Boolean`	| `true`	| Sorry @MichMich. This could be `hide` the original calendar. It is not `module.hide()`, just `display:none`.|
@@ -97,7 +96,7 @@ I know, `100` is a bit small. If you have large screen, `250` could be pretty. T
 | `showEventLocation` | `Boolean` | `true`	| Don't you want to know where the event is held? |
 
 ## Notice
-I had a plan to release this late this month because of my summer holidays. But... I release now.
-I believe there are many bugs in this. But I have no time to fix it for a while. You should consider that.
+I had a plan to release this late this month because of my summer holidays(from 7. Jul). However... I release now.
+I believe there are many bugs in this. But I have no time to fix it for a while. You should consider that. After vacation, I'll check everything.
 
 **Goog Luck!** 
