@@ -7,7 +7,7 @@ extended default calendar view
 
 **[Important] This is under construction, not stable. All responsibilty caused by this version is not mine, sorry. But if you want to try, please go ahead.**
 
-This module is beautify original `default/calendar` module views. This module catches events broadcasted from original calendar, show them pretty. That's simple. I didn't reinvent the wheels.
+This module is beautifying original `default/calendar` module view. This module catches events broadcasted from original calendar, shows them pretty. That's simple. I didn't reinvent the wheels.
 
 ## Dependencies
 Nothing. I hope someday I can build more complex and greeeeeaaaat modules which need Dependencies.
