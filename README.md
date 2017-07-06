@@ -87,7 +87,7 @@ Enough Entries are needed for showing proper events by days.
 | `overflowHeight`	| `Integer`	| `100`	| Do not append `px` or `%`. Only Integer is acceptable.<br> I know, `100` is a bit small. If you have large screen, `250` could be pretty. This value is not activated when `overflowRolling` is not `true`. |
 | `overflowDuration`	| `Integer`(sec)	| `2`	| Smaller is faster. This is also not activated when `overflowRolling` is not `true`. |
 | `fullDayEventLocalize`	| `Boolean`	| `true`	| Don't touch this. This is a great mystery even for me. Someday I'll fix it. |
-| `hideOriginal`	| `Boolean`	| `true`	| Sorry @MichMich. This could be `hide` the original calendar. It is not `module.hide()`, just `display:none`.|
+| `hideOriginal`	| `Boolean`	| `true`	| Sorry @MichMich. This could  `hide` the original calendar. It is not `module.hide()`, just `display:none`.|
 | `originalSender`	| `String`	| `'calendar'`	| Don't touch this. Reserved for future. <br> Currently only `calendar` module broadcast calendar events. But I imagine someday there will be other modules who broadcast events. Weather module could tell forecasting. Uber module could tell the reservation. Furthermore, Alexa or Google Assistant could also. What a dream! |
 | `monthStringFormat`	| `String`	| `'MMM'`	| If the date of events are in next month, month name will be added front of date. <br> You can see all the variable format tokens in `moment.js :: .format()` [link](https://momentjs.com/docs/#/displaying/format/)  <br> `.fromNow()` is not supported. Someday I will. |
 | `dateStringFormat`	| `String`	| `'D'`	| Main date format(the biggest number in the module). |
