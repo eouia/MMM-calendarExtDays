@@ -74,13 +74,13 @@ go to around 524 line and find these.
 ```
 If symbol and color are not used, this module shows only circle symbol and BLACK-WHITE. and that is not what you want. 
 Enough Entries are needed for showing proper events by days.
-**This is not Alternative of default calendar module. This module needs default calendar module running. Don't remove the default calendar from your configs.**
+** This is not Alternative of default calendar module. This module needs default calendar module running. Don't remove the default calendar from your configs. **
 
 ## Config Options
 
 | **Option** | **Value Type** | **Default** | **Description** |
 | --- | --- | --- | --- |
-| `locale`    | `String`  |`'en'`  | Format date strings with specific language. (e.g. `'ko'` for display 'Sunday' to '일요일') |
+| `locale`    | `String`  |`'en'`  | Format date strings with specific language. (e.g. `'ko'` displays '일요일' instead of 'Sunday') |
 | `timezone`  | `String`  | `null` | When you want display time of specific timezone. (e.g. `'America/Los_Angeles'` for Western US). Default value  is your current system locale(I wish). I think there might be some bug about this. I'll fix it later. |
 | `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen when this value is smaller than 0 or not Integer. I'll check this later also. <br> Over `7` in horizontal region and over `5` in vertical region might be not what you wish to see. |
 | `direction` | `String`  | `'row'`   | **Available Values** : `'row'`,`'row-reverse'`, `'column'`, `'column-reverse'`<br> `'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`) <br>`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) <br> But... This is your choice. |
