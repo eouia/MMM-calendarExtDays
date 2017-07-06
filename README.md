@@ -13,10 +13,10 @@ Nothing. I hope someday I can build more complex and greeeeeaaaat modules which 
 ## Installation
 
 1. Clone this repo into `~/MagicMirror/modules` directory.
-  ```
+   ```
   	$ git clone https://github.com/eouia/MMM-calendarExtDays.git
-  ```
-1. Configure your `~/MagicMirror/config/config.js`:
+   ```
+2. Configure your `~/MagicMirror/config/config.js`:
 
     ```
     {
@@ -27,15 +27,15 @@ Nothing. I hope someday I can build more complex and greeeeeaaaat modules which 
         }
     }
     ```
-1. This version needs some original calendar module hacks.
+3. This version needs some original calendar module(~ 2.1.2) hacks.
 Backup and modify `calendar.js`.
     ```
-  $ cd ~/MagicMirror/modules/default/calendar
-  $ cp calendar.js calendar.js.original
-  $ nano calendar.js
+  	$ cd ~/MagicMirror/modules/default/calendar
+  	$ cp calendar.js calendar.js.original
+  	$ nano calendar.js
     ```
 go to around 524 line and find these.
-```
+    ```
 			for (var e in calendar) {
 				var event = cloneObject(calendar[e]);
       
@@ -47,8 +47,8 @@ go to around 524 line and find these.
 				eventList.push(event);
 			}
 
-```
-This instruction will be deprecated after `PULL REQUEST` is accpeted and merged in Master branch.
+    ```
+**This instruction will be deprecated after `PULL REQUEST` is accpeted and merged in Master branch.**
 
 
 ## Config Options
@@ -57,9 +57,9 @@ This instruction will be deprecated after `PULL REQUEST` is accpeted and merged 
 | --- | --- | --- | --- |
 | `locale`    | `String`  |`'en'`  | Format date strings with specific language. (e.g. `'ko'` for display 'Sunday' to '일요일') |
 | `timezone`  | `String`  | `null` | When you want display time of specific timezone. (e.g. `'America/Los_Angeles'` for Western US). Default value  is your current system locale(I wish). I think there might be some bug about this. I'll fix it later. |
-| `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen this value is smaller than 0 or not Integer. I'll check this later also. 
+| `days`      | `Integer` | `3`     | How many days to display (including today). I don't know what will happen this value is smaller than 0 or not Integer. I'll check this later also. \
 Over `7` in horizontal region and over `5` in vertical region might be not what you wish to see. |
 | `direction` | `String`  | `'row'`   | **Available Values** : `'row'`,`'row-reverse'`, `'column'`, `'column-reverse'`
-`'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`)
-`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) 
+`'row'` and `'row-reverse'` are good for horizontal region (e.g. `bottom_bar`) \
+`'column'` and `'column-reverse'` are good for vertical region (e.g. `top_left`) \
 But... This is your choice. |
