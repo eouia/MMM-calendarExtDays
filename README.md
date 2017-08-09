@@ -1,3 +1,6 @@
+# NOTICE #
+## This module is deprecated. Use [MMM-CalendarExt](https://github.com/eouia/MMM-CalendarExt)
+
 # MMM-calendarExtDays
 extended default calendar view
 
